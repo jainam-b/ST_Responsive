@@ -102,7 +102,16 @@ a {
     margin: -12px;
 }
 .margin_top{
-    margin-top: 55px;
+    margin-top: 100px;
+}
+.search{
+    width: 39vw;
+    margin: 25px;
+    height: 6vh;
+    border: solid 3px #094B72;
+}
+.join_us{
+    font-size: 24px;
 }
 
 
@@ -123,10 +132,16 @@ a {
 
     .button {
         display: none;
+        visibility: hidden;
       }
       .button .component {
-        display: none;
-      }
+        /* height: 53px; */
+        /* background-image: url(./images/Rectangle.png); */
+        /* background-size: 100% 100%; */
+        /* margin-left: 994px; */
+        /* margin-top: -13px; */
+        visibility: hidden;
+    }
       .button .overlap-group {
         display: none;
       }
@@ -150,5 +165,18 @@ a {
         letter-spacing: 1.20px;
         word-wrap: break-word;
         margin: -31px;
+    }
+    .search {
+        width: 90vw;
+        margin: 33px;
+        height: 6vh;
+        border: solid 3px #094B72;
+    }
+    .margin_top{
+        margin-top: 60px;
+    }
+    .join_us {
+        font-size: 16px;
+        margin-top: -16px;
     }
   }
