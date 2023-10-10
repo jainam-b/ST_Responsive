@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair Display:wght@700&display=swap"
+    />
+</head>
+<body>
+    <!-- Main navigation bar (desktop) -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top navbar-light p-3 shadow-sm">
+        <!-- ... (your existing code) ... -->
+    </nav>
+
+    <!-- Mobile navigation bar -->
+    <button class="mobile-nav-toggler d-lg-none">
+        <!-- Add an icon or text for the mobile menu button -->
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="mobile-nav">
+        <!-- Content for mobile navigation -->
+        <!-- You can reuse your existing navigation links here -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+            </li>
+            <!-- Add more menu items as needed -->
+        </ul>
+    </div>
+
+    <!-- Rest of your HTML content -->
+
+    <!-- Add Bootstrap and other scripts as before -->
+
+    <!-- Custom CSS for mobile navigation -->
+    <style>
+        /* Style for the mobile navigation button */
+        .mobile-nav-toggler {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 9999;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Style for the mobile navigation */
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            right: -300px; /* Move it off the screen initially */
+            width: 250px; /* Set the width you prefer */
+            height: 100%;
+            background-color: white;
+            z-index: 9998;
+            transition: right 0.3s ease-in-out;
+            overflow-y: auto; /* Add scroll for small screens */
+        }
+
+        .mobile-nav.show {
+            right: 0; /* Bring the mobile navigation in from the right */
+        }
+
+        /* You can style the mobile navigation links as needed */
+        .mobile-nav ul.navbar-nav {
+            padding-top: 20px; /* Adjust as needed */
+        }
+
+        .mobile-nav .nav-link {
+            padding: 10px 20px; /* Adjust as needed */
+        }
+    </style>
+
+    <!-- JavaScript to toggle mobile navigation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileNavButton = document.querySelector('.mobile-nav-toggler');
+            const mobileNav = document.querySelector('.mobile-nav');
+
+            mobileNavButton.addEventListener('click', function () {
+                mobileNav.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>

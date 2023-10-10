@@ -114,8 +114,102 @@ a {
     font-size: 24px;
 }
 
+.blue-icon {
+  position: absolute;
+  height: 91.79vh;
+  width: 100%;
+  top: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0.21%;
+  overflow: hidden;
+  display: flex;
+  gap: 100px;
+  /* align-items: center; */
+  background-color: #F2F7FF;}
+  .tag {
+    border-radius: 20px;
+    background-color: #f7f1ff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    gap: 12px;
+    text-align: left;
+    color: #722ed1;
+  }
+  .discover-the-benefits {
+    position: relative;
+    font-size: 32px;
+    line-height: 40px;
+    font-family: Playfair Display;
+    margin: 10px;
+  }
+  .box{
+    height: 263px;
+    width: 296px;
+  }
+  .vector-icon {
+    position: relative;
+    width: 32px;
+    height: 40px;
+  }
+  .journals,
+  .we-are-the {
+    position: relative;
+    line-height: 24px;
+    display: inline-block;
+    /* width: 307px; */
+  }
+  .we-are-the {
+    font-weight: 500;
+    font-family: Poppins; ;
+    color: #8989a2;
+    width: 305px;
+  }
 
-
+  .resources-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-42xl);
+    background-color: var(--color-steelblue);
+    width: 198.29px;
+    height: 43.5px;
+  }
+  .resources-editors {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    border-radius: var(--br-42xl);
+    background-color: var(--color-steelblue);
+    width: 198.29px;
+    height: 43.5px;
+  }
+  .resources-for-librarian {
+    right: 0;
+    letter-spacing: 0.08em;
+    line-height: 140.5%;
+    display: flex;
+    align-items: center;
+    width: 256px;
+    height: 49.15px;
+    margin-top: 20px;
+    border-radius: 33px;
+    background-color: #094B72;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+  .resources {
+    position: relative;
+    width: 220.8px;
+    height: 43.5px;
+    text-align: left;
+    font-size: var(--font-size-sm);
+    color: var(--neutral-grey-1);
+  }
 
 /* search ends */
   @media screen and (max-width:769px){
@@ -179,4 +273,30 @@ a {
         font-size: 16px;
         margin-top: -16px;
     }
+    /* why ojs  */
+    .discover-the-benefits {
+      position: relative;
+      font-size: 16px;
+      line-height: 40px;
+      font-family: Playfair Display;
+       
+    }
+    .blue-icon {
+      position: absolute;
+      height: 127vh;
+      width: 100%;
+      top: 82%;
+      right: 0;
+      bottom: 0;
+      left: 0.21%;
+      overflow: hidden;
+      display: flex;
+      gap: 100px;
+      /* align-items: center; */
+      background-color: #F2F7FF;}
+      
+      .mar_top{
+        margin-top: 60px;
+      }
+  
   }
