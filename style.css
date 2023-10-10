@@ -1,11 +1,19 @@
 body{
     font-family: Playfair Display;
     font-weight: 400;
-    color: #F2F7FF;
+    /* overflow: hidden; */
     font-size: 18px;
    
 }
-
+.logo {
+    position: absolute;
+    width: 190px;
+    height: 41px;
+    top: 10px;
+    left: 56px;
+    object-fit: cover;
+}
+ 
 a {
     font-size:14px;
     font-weight:400
@@ -17,22 +25,16 @@ a {
     outline:none !important;
     box-shadow: none !important;
   }
-  .logo {
-    position: absolute;
-    width: 190px;
-    height: 41px;
-    top: 10px;
-    left: 56px;
-    object-fit: cover;
-}
+
 .ms-autos {
-    margin: 0px 313px;
+    margin: 0px 52px;
 }
 .bg{
     background-color: #094B72;
     color: white;
 }
  .button {
+    
     position: absolute;
     top: 10px;
     left: 56px;
@@ -48,14 +50,14 @@ a {
     background-image: url(./images/Rectangle.png);
     background-size: 100% 100%;
     margin-left: 994px;
-    margin-top: 10px;
+    margin-top: -13px;
   }
   .button .overlap-group {
     position: relative;
     width: 138px;
     height: 23px;
-    top: 11px;
-    left: 14px;
+    top: 119px;
+    left: 80px;
   }
   
   .button .get-a-quote {
@@ -79,6 +81,34 @@ a {
     top: -98px;
     left: 21px;
   }
+  .navbar-nav li a {
+    white-space: nowrap;
+}
+
+.navbar-nav li .spans {
+    display: inline;
+}
+/* search starts */
+.share_your_research{
+    width: 1254px;
+    text-align: center;
+    color: #094B72;
+    font-size: 60px;
+    font-family: Playfair Display;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 1.20px;
+    word-wrap: break-word;
+    margin: -12px;
+}
+.margin_top{
+    margin-top: 55px;
+}
+
+
+
+
+/* search ends */
   @media screen and (max-width:769px){
     .centerOnMobile {
       text-align:center
@@ -107,6 +137,18 @@ a {
       }
       
       .button .group {
-     display: none;
+        display: none;
       }
+      .share_your_research{
+        width: 100vw;
+        text-align: center;
+        color: #094B72;
+        font-size: 30px;
+        font-family: Playfair Display;
+        font-weight: 700;
+        line-height: 72px;
+        letter-spacing: 1.20px;
+        word-wrap: break-word;
+        margin: -31px;
+    }
   }
