@@ -3,6 +3,7 @@ body{
     font-weight: 400;
     overflow: scroll;
     font-size: 18px;
+    
    
 }
  
@@ -198,10 +199,92 @@ a {
   font-weight: 900;
   font-size: 48px;
   letter-spacing: 0.5px;
+  color: black;
 }
 .count_description{
   margin-top: -35px;
+  color: black;
 }
+.counts {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.divs {
+  text-align: center;
+  flex-basis: calc(33.33% - 20px);
+  margin: 10px;
+  padding: 20px;
+  background-color: #094b72; /* Background color for each count */
+  border-radius: 25px;
+}
+
+.number {
+  font-weight: 800;
+  font-size: 24px;
+  color: #fff;
+}
+
+.label {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+/* library starts desktop */
+.lib_bg {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #f2f7ff;
+}
+.lib_title{
+  font-size: 48px;
+  font-family: "Playfair Display";
+  margin-top: 10px;
+}
+.lib_image  {
+  /* d-flex justify-content-center  align-items-center flex-row mx-5 mt-5 flex-nowrap */
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 50px;
+  flex-wrap: nowrap;
+ 
+
+}
+/* .international-studies-of{
+    display: flex;
+    text-align: center;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    line-height: 32px;
+    align-self: stretch;
+} */
+.international-studies-of {
+  align-self: stretch;
+  position: relative;
+  line-height: 32px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.nama-rumah-harga {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* library ends desktop */
 /* search ends */
   @media screen and (max-width:768px){
     .centerOnMobile {
@@ -270,7 +353,7 @@ a {
     }
     .blue-icon {
       /* position: absolute; */
-      height: 140vh;
+      height: 187vh;
       width: 100vw;
       top: 82%;
       right: 0;
@@ -288,14 +371,94 @@ a {
       .mar_tops{
         margin-top: 125px;
       }
-      .section-title {
-        font-family:  Playfair Display;
-        font-weight: 900;
-        font-size: 30px;
-        letter-spacing: 0.5px;
-      }
-      .count_description{
-        margin-top: -35px;
-        font-size: 12px;
-      }
+     
+
+
+      .component-5 {
+        text-align: center;
+        color: #fff;
+        padding: 20px;
+    }
+  
+    /* Counts styles for mobile */
+    .counts {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+  
+    .divs {
+        text-align: center;
+        flex-basis: calc(33.33% - 20px);
+        margin: 10px;
+        padding: 20px;
+        background-color: #094b72; /* Background color for each count */
+        border-radius: 20px;
+    }
+  
+    .number {
+        font-weight: 800;
+        font-size: 24px;
+        color: #fff;
+    }
+  
+    .label {
+        font-size: 18px;
+        color: #fff;
+        text-decoration: none;
+    }
+  
+    /* Section heading styles for mobile */
+    .section-heading {
+        text-align: center;
+        margin-top: 20px;
+    }
+  
+    .section-title {
+      font-family:  Playfair Display;
+      font-weight: 900;
+      font-size: 25px;
+      letter-spacing: 0.5px;
+      color: black;
+    }
+    .count_description{
+      margin-top: -35px;
+      font-size: 10px;
+      color: black;
+    }
+  
+     /* library starts  */
+
+     .lib_title{
+      font-size: 26px;
+      font-family: "Playfair Display";
+      margin-top: 10px;
+    }
+    .international-studies-of {
+      align-self: stretch;
+      position: relative;
+      line-height: 32px;
+      font-weight: 500;
+      font-size: 19px;
+      text-align: center;
+      margin: 8px 3px;
   }
+    .lib_image  {
+      /* d-flex justify-content-center  align-items-center flex-row mx-5 mt-5 flex-nowrap */
+      display: flex ;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      margin-top: 50px;
+      flex-wrap: wrap;
+     
+    
+    }
+
+
+
+     /* library ends  */
+  }
+
+  
