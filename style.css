@@ -59,14 +59,14 @@ a {
     width: 138px;
     height: 23px;
     top: 119px;
-    left: 80px;
+    /* left: 80px; */
   }
   
   .button .get-a-quote {
     position: absolute;
     width: 144px;
     top: -103px;
-    left: -94px;
+    left: -7px;
     font-family: "Circular-Medium", Helvetica;
     font-weight: 500;
     color: #ffffff;
@@ -81,7 +81,7 @@ a {
     width: 8px;
     height: 11px;
     top: -98px;
-    left: 21px;
+    left: 100px;
   }
   .navbar-nav li a {
     white-space: nowrap;
